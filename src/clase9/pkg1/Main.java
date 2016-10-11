@@ -29,6 +29,8 @@ public class Main {
         b.agregarFiguraGeometrica(marco1);
         b.agregarFiguraGeometrica(marco2);
         b.agregarFiguraGeometrica(marco3);
+        double area = b.calcularAreaTotal();
+        System.out.println(area);
     }
     
 }

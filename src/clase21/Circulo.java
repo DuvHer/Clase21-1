@@ -3,20 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clase9.pkg1;
+package clase21;
 
 /**
  *
  * @author Estudiante
  */
-public class FiguraGeometrica {
-    protected String color;
+public class Circulo extends FiguraGeometrica{
+    private double radio;
 
-    public FiguraGeometrica(String color) {
-        this.color = color;
+    public Circulo(String color, double radio) {
+        super(color);
+        this.radio = radio;
     }
-    
+    @Override
     public double calcularArea(){
-    return 0;
+    return (Math.pow(this.radio, 2)*Math.PI);
     }
 }
